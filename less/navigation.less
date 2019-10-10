@@ -1,1 +1,43 @@
 // Navigation Styles here
+nav{
+    .flex(row, space-between);
+
+    @media @mobile {
+        flex-direction: column;
+        margin-top: 2%;
+    }
+
+    align-items: center;
+    border-bottom: 2px dashed lightgrey;
+    width: 100%;
+
+    .logo{
+        .flex(row, flex-start);
+
+        @media @mobile {
+            margin-top: 2rem;
+        }
+    }
+
+    .links{
+        .flex(row, space-around);
+        margin: 2% 2%;
+
+        @media @mobile {
+            flex-direction: space-between;
+            margin: 0;
+            padding: 0 2%;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        margin: 4% 2%;
+        width: 8rem;
+        text-align: center;
+    }
+
+
+}
